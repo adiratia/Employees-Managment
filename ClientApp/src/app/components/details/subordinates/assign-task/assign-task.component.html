@@ -1,0 +1,15 @@
+<div class="form-froup row ">
+  <label class="col-sm-3 col-form-label">Text : </label>
+  <div class="col-sm-9">
+    <textarea class="form-control" [(ngModel)]="taskText" placeholder="Enter text:" style=" height:150px; "></textarea>
+
+  </div>
+  <label style="margin-bottom: 20px;" class="col-sm-3 col-form-label">Due Date : </label>
+  <div style="margin-top: 20px; " class="col-sm-9">
+    <input type="date" data-date-format="mm/dd/yyyy" class="form-control" [(ngModel)]="dueDate" placeholder="Enter due date:" />
+  </div>
+  <div style="margin-top: 20px; " class="col-sm-12 text-center">
+
+    <button  class="btn btn-primary " (click)=" sendTask()" required="required"> Send</button>
+  </div>
+</div>

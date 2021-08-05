@@ -1,0 +1,20 @@
+<div class="row">
+  <h4>My tasks</h4>
+  <!-- Tasks table -->
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Content</th>
+        <th>Due date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- for each task in tasks list -->
+      <tr *ngFor=" let task of tasks">
+
+        <td>{{task.text}}</td>
+        <td>{{task.due_date}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

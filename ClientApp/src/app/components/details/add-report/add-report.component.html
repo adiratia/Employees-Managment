@@ -1,0 +1,13 @@
+ <!-- Add report form -->
+<div class="form-froup row ">
+  <label class="col-sm-3 col-form-label">Text : </label>
+  <div class="col-sm-9">
+    <!-- Text area -->
+    <textarea class="form-control" [(ngModel)]="textReport" placeholder="Enter Report text" style=" height:150px; "></textarea>
+
+  </div>
+  <div style="margin-top: 20px; " class="col-sm-12 text-center">
+    <!-- Add report buttun -->
+    <button (click)="addReport()" class="btn btn-primary " required="required"> Add Report</button>
+  </div>
+</div>

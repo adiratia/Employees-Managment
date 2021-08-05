@@ -1,0 +1,22 @@
+<div class="row">
+  <h4>My reports</h4>
+  <!-- Reports table -->
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Repoter name</th>
+        <th>Content</th>
+        <th>Report date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- For each report from report slist -->
+      <tr *ngFor=" let report of EmpReporters">
+
+        <td>{{report.first_name}} {{report.last_name}}</td>
+        <td>{{report.text}}</td>
+        <td>{{report.assign_date}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
